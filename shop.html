@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Centauri LLC - Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap">
+
+        <!-- Include Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="container">
+            <!-- Logo on the left -->
+            <a href="index.html" class="navbar-brand">
+              <img src="images/logo-white.svg" alt="Logo" class="logo">
+            </a>
+      
+            <!-- Menu on the right -->
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html">Our Products</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="ar/shop.html">عربي</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+
+      <section class="shop-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Experience</h1>
+                <p>Explore Our Range of Cutting-Edge Space Technologies</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Filters Section -->
+<section class="shop-filters">
+    <div class="container">
+        <div class="filter-dropdown">
+            <button id="categoryBtn">Category</button>
+            <div id="categoryDropdown" class="dropdown-content">
+                <label><input type="radio" name="category" value="spaceships">Spaceships</label>
+                <label><input type="radio" name="category" value="water-purifiers">Water Purifiers</label>
+                <label><input type="radio" name="category" value="engines">Engines</label>
+            </div>
+        </div>
+        
+        <div class="filter-dropdown">
+            <button id="priceBtn">Price</button>
+            <div id="priceDropdown" class="dropdown-content">
+                <label><input type="radio" name="price" value="below-500000">Below $500,000</label>
+                <label><input type="radio" name="price" value="above-500000">Above $500,000</label>
+            </div>
+        </div>
+        
+        <div class="filter-dropdown">
+            <button id="availabilityBtn">Availability</button>
+            <div id="availabilityDropdown" class="dropdown-content">
+                <label><input type="radio" name="availability" value="available">Available</label>
+                <label><input type="radio" name="availability" value="unavailable">Unavailable</label>
+            </div>
+        </div>
+        
+        
+        <button id="clearFiltersBtn">Clear Filters</button>
+    </div>
+</section>
+
+
+
+<!-- Product Grid (Where filtered results will be displayed) -->
+<section id="product-grid" class="container">
+    <!-- Products will be dynamically inserted here -->
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <img src="images/logo-white-footer.svg" alt="Logo" class="footer-logo" width="60">
+                <p>Empowering Your Space Endeavors</p>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Products</h4>
+                <ul>
+                    <li>Nuclear Fusion (αFE)</li>
+                    <li>Antimatter (αAME)</li>
+                    <li>Argentum Starflyer</li>
+                    <li>Celestial Navigator</li>
+                    <li>Titan Hauler</li>
+                    <li>Water Purifiers</li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li>Maintenance & Support</li>
+                    <li>Research & Development</li>
+                    <li>Training & Simulation</li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><i class="fa fa-phone"></i> +962790910041</p>
+                <p><i class="fa fa-envelope"></i> contact@alphacentauri.com</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alpha Centauri LLC. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة ألفا سنتوري - المتجر</title>
+        <!-- Include Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Arabic Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style-rtl.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="container">
+            <!-- Logo on the left -->
+            <a href="index.html" class="navbar-brand">
+              <img src="../images/logo-white.svg" alt="Logo" class="logo">
+            </a>
+      
+            <!-- Menu on the right -->
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">الصفحة الرئيسية</a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html">منتجاتنا</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
+              <li class="nav-item"><a class="nav-link" href="../shop.html">English</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      
+
+      <section class="shop-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>رفع تجربتك</h1>
+                <p>استكشف مجموعتنا من تكنولوجيا الفضاء المتطورة</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Filters Section -->
+<section class="shop-filters">
+    <div class="container">
+        <div class="filter-dropdown">
+            <button id="categoryBtn">النوع</button>
+            <div id="categoryDropdown" class="dropdown-content">
+                <label><input type="radio" name="category" value="spaceships">سفن فضائية</label>
+                <label><input type="radio" name="category" value="water-purifiers">منقيات مياه</label>
+                <label><input type="radio" name="category" value="engines">محركات</label>
+            </div>
+        </div>
+        
+        <div class="filter-dropdown">
+            <button id="priceBtn">السعر</button>
+            <div id="priceDropdown" class="dropdown-content">
+                <label><input type="radio" name="price" value="below-500000">أقل من 500,000 دولار</label>
+                <label><input type="radio" name="price" value="above-500000">أعلى من 500,000 دولار</label>
+            </div>
+        </div>
+        
+        <div class="filter-dropdown">
+            <button id="availabilityBtn">التوافر</button>
+            <div id="availabilityDropdown" class="dropdown-content">
+                <label><input type="radio" name="availability" value="available">متوفر</label>
+                <label><input type="radio" name="availability" value="unavailable">غير متوفر</label>
+            </div>
+        </div>
+        
+        <button id="clearFiltersBtn">مسح الفلاتر</button>
+    </div>
+</section>
+
+
+
+
+<!-- Product Grid (Where filtered results will be displayed) -->
+<section id="product-grid" class="container">
+    <!-- Products will be dynamically inserted here -->
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-column">
+            <img src="../images/logo-white-footer.svg" alt="Logo" class="footer-logo" width="60">
+            <p>تمكين جهودك الفضائية</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>المنتجات</h4>
+            <ul>
+                <li>الاندماج النووي (αFE)</li>
+                <li>المضاد للمادة (αAME)</li>
+                <li>Argentum Starflyer</li>
+                <li>Celestial Navigator</li>
+                <li>Titan Hauler</li>
+                <li>منقي المياه</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>الخدمات</h4>
+            <ul>
+                <li>الصيانة والدعم</li>
+                <li>البحث والتطوير</li>
+                <li>التدريب والمحاكاة</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>اتصل بنا</h4>
+            <p><i class="fa fa-phone"></i> +962790910041</p>
+            <p><i class="fa fa-envelope"></i> contact@alphacentauri.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 شركة ألفا سنتوري. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
+    
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</body>
+</html>
