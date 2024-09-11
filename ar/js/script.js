@@ -285,3 +285,21 @@ function toggleQuoteForm() {
             });
         });
         
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+        
+            menuToggle.addEventListener('click', () => {
+                console.log('Menu toggle clicked');
+                
+                if (mainNav.classList.contains('nav-hidden')) {
+                    mainNav.classList.remove('nav-hidden');
+                    mainNav.classList.add('nav-visible');
+                } else {
+                    mainNav.classList.remove('nav-visible');
+                    mainNav.classList.add('nav-hidden');
+                }
+            });
+        });
+        
+        
