@@ -852,7 +852,8 @@ background: transparent;
 
 /* Basic styling for the form container */
 .quote-form {
-    display: none;
+     visibility:hidden;
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -1087,7 +1088,7 @@ textarea {
     .menu-toggle {
         display: none;
     }
-    .nav-hidden {
+        .nav-hidden {
         display: none;
         position: static;
         top: 60px;

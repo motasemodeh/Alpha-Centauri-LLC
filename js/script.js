@@ -228,58 +228,24 @@ window.addEventListener('DOMContentLoaded', displayProduct);
 
 
 
-// get Quote popup
-
-        // JavaScript to handle the form display and submission
-        document.addEventListener('DOMContentLoaded', () => {
-            const getQuoteBtn = document.getElementById('get-quote-btn');
-            const quoteForm = document.getElementById('quote-form');
-            const closeQuoteForm = document.getElementById('close-quote-form');
-            const quoteRequestForm = document.getElementById('quote-request-form');
-
-            // Show the quote form when "Get a Quote" button is clicked
-            getQuoteBtn.addEventListener('click', () => {
-                quoteForm.style.display = 'flex';
-            });
-
-            // Hide the quote form when the close button is clicked
-            closeQuoteForm.addEventListener('click', () => {
-                quoteForm.style.display = 'none';
-            });
-
-            // Handle form submission
-            quoteRequestForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                // Handle form data here (e.g., send to server)
-                alert('Quote request submitted!');
-                quoteForm.style.display = 'none';
-                quoteRequestForm.reset(); // Reset the form
-            });
-        });
 
 // Function to toggle the visibility of the quote form
-function toggleQuoteForm() {
-    const quoteForm = document.getElementById('quoteForm');
-    const body = document.body;
 
-    if (quoteForm.style.display === 'block') {
-        quoteForm.style.display = 'none';
-        body.classList.remove('no-scroll'); // Enable scrolling
-    } else {
-        quoteForm.style.display = 'block';
-        body.classList.add('no-scroll'); // Disable scrolling
-    }
-}
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
+
     // Function to toggle the quote form visibility
     function toggleQuoteForm() {
         const form = document.querySelector('.quote-form');
         if (form) {
             form.classList.toggle('visible');
         }
+        
     }
-
+            document.getElementById('get-quote-btn').addEventListener('click', toggleQuoteForm);
+        document.querySelector('.close-btn').addEventListener('click', toggleQuoteForm);
     // Attach click event to the product info button if it exists
     const productButton = document.querySelector('.product-info button');
     if (productButton) {
@@ -318,7 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
     displayProduct(exampleProduct);
 });
 
-        
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
@@ -335,4 +300,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
